@@ -1,0 +1,52 @@
+.input-container {
+    text-align: center;
+    margin-top: 5%;
+}
+
+h1 { 
+    color: #a7ff83;
+}
+
+.inputContainer{
+
+    display: flex;
+    justify-content: center;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    background: transparent;
+    padding: 5%;
+    background-color: #086972;
+    margin: auto;
+    width: 70%;
+    background-image: url(./background.png);
+    border-radius: 10px; 
+}
+
+
+.linkBtn {
+    padding: 15px;
+    border-radius: 0px 10px 10px 0px;
+    border: none;
+    background-color: #17b978;
+    transition: ease 0.3s;
+    color: white;
+}
+
+.linkBtn:hover {
+    transform: scaleX(1.15);
+    background-color: #a7ff83;  
+}
+
+.linkInput {
+    
+    padding: 15px;
+    width: 70%;
+    border-radius: 10px 0px 0px 10px;
+    border: none;
+    text-align: center;
+    border: 2px solid white;
+}
+
+.linkInput:focus{
+    border: 2px solid #17b978;
+}
+
