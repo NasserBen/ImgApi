@@ -1,17 +1,14 @@
-import React from 'react';
-import "./Navigation.css"
-import Logo from "../Logo/Logo"
+import React from 'react'
+import './Navigation.css'
+import Logo from '../Logo/Logo'
 
-class Navigation extends React.Component {
-
-    render() {
-
-        return (
-            
-            <nav className="nav">< Logo /><a href="/">Sign Out</a></nav>
-
-        );
-    }
+const Navigation = ({ onRouteChange }) => {
+  return (
+    <nav className='nav'>
+      <Logo />
+      <p onClick={() => onRouteChange('signIn')}>Sign Out</p>
+    </nav>
+  )
 }
 
-export default Navigation;
+export default Navigation

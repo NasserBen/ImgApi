@@ -1,0 +1,67 @@
+.signIn {
+  text-align: center;
+  font-family: monospace;
+  width: 70%;
+  margin: 10% auto;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+
+.loginContainer {
+  padding: 3%;
+}
+
+.loginContainer h1 {
+  font-size: 2rem;
+  color: white;
+}
+.loginContainer p {
+  font-size: 1rem;
+  color: #17b978;
+}
+
+.loginContainer input {
+  width: 50%;
+  border: 1px solid #17b978;
+  padding: 10px;
+  border-radius: 7px;
+}
+
+.signInBtn {
+  display: block;
+  margin: 20px auto;
+  background-color: transparent;
+  border: 1px solid #17b978;
+  padding: 10px;
+  border-radius: 7px;
+  width: 53%;
+  color: white;
+}
+
+.signInBtn:hover {
+  background-color: #17b978;
+}
+.registerBtn {
+  display: block;
+  margin: 20px auto;
+  background-color: transparent;
+  border: none;
+  color: #a7ff83;
+}
+
+.registerBtn:hover {
+  color: #17b978;
+}
+
+@media only screen and (min-width: 900px) {
+  .signIn {
+    width: 450px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .signIn {
+    width: 95%;
+  }
+}

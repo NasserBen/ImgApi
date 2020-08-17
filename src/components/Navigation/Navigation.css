@@ -5,7 +5,7 @@ nav {
 
 }
 
-nav a {
+nav p {
     text-decoration: none;
     background-color: #17b978;
     color: white;
@@ -15,17 +15,18 @@ nav a {
     padding: 15px;
     text-align: center;
     margin: 7px;
-    height: 25px;
+    height: 20px;
     transition: ease 0.1s;
+    cursor: pointer;
 }
 
-nav a:hover {
+nav p:hover {
     box-shadow: rgb(0,0,0,.4) 1px 2px 2px 2px;
     transform: scale(1.05);
     transition: ease-in 0.23s ;
 }
 
-nav a:focus {
+nav p:focus {
     background-color: #086972;
     color: #17b978;
 }
