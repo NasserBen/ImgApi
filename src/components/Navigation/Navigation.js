@@ -6,7 +6,6 @@ const Navigation = ({ onRouteChange }) => {
   return (
     <nav className='nav'>
       <Logo />
-      <p onClick={() => onRouteChange('signIn')}>Sign Out</p>
     </nav>
   )
 }

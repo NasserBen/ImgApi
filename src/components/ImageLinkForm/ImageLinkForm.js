@@ -7,15 +7,14 @@ const ImageLinkForm = ({ onInputChange, onSubmit, validUrl }) => {
     <div className='input-container'>
       <div>
         <h1>This AI will detect any faces in your image.</h1>
-        <h1>Try it out!</h1>
       </div>
       <div className='inputContainer'>
         <input
           onChange={onInputChange}
           type='text'
-          placeholder='Enter link to image...'
+          placeholder='Enter image url'
           className='linkInput'
-          style={validUrl? {} : {border: "2px solid red"}}
+          style={validUrl? {} : {border: "4px solid red"}}
         ></input>
         <button onClick={onSubmit} className='linkBtn'>
           Detect Faces!

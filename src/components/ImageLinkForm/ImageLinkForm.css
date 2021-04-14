@@ -4,7 +4,7 @@
 }
 
 h1 { 
-    color: #a7ff83;
+    color: white;
 }
 
 .inputContainer{
@@ -14,10 +14,10 @@ h1 {
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
     background: transparent;
     padding: 5%;
-    background-color: #086972;
+    background-color: #092066;
     margin: auto;
     width: 70%;
-    background-image: url(./background.png);
+    /* background-image: url(./background.png); */
     border-radius: 10px; 
 }
 
@@ -26,14 +26,14 @@ h1 {
     padding: 15px;
     border-radius: 0px 10px 10px 0px;
     border: none;
-    background-color: #17b978;
+    background-color: #e54464;
     transition: ease 0.3s;
     color: white;
 }
 
 .linkBtn:hover {
     transform: scaleX(1.15);
-    background-color: #a7ff83;  
+    background-color: #f8738b;  
 }
 
 .linkInput {
@@ -47,6 +47,6 @@ h1 {
 }
 
 .linkInput:focus{
-    border: 2px solid #17b978;
+    border: 2px solid #f8738b;
 }
 

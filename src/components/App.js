@@ -3,9 +3,6 @@ import './App.css'
 import Navigation from '../components/Navigation/Navigation'
 import FaceRecognition from '../components/FaceRecognition/FaceRecognition'
 import ImageLinkForm from '../components/ImageLinkForm/ImageLinkForm'
-import Ranking from '../components/Ranking/Ranking'
-import SignIn from '../components/SignIn/SignIn'
-import Register from '../components/Register/Register'
 import Particles from 'react-particles-js'
 import Clarifai from 'clarifai'
 import Logo from './Logo/Logo'
@@ -77,9 +74,9 @@ class App extends React.Component {
       .then(response => {
         if (this.state.validUrl) {
           this.displayFaceBox(this.calculateFaceLocation(response))
-        } else {
           this.setState({ validUrl: true })
         }
+        this.setState({ validUrl: true })
       })
       .catch(err => {
         console.log(err)
@@ -95,10 +92,8 @@ class App extends React.Component {
     return (
       <div className='App'>
         <Particles className='particles' params={particleOptions} />
-        {this.state.route === 'home' ? (
           <div>
             <Navigation onRouteChange={this.onRouteChange} />
-            <Ranking />
             <ImageLinkForm
               onInputChange={this.onInputChange}
               onSubmit={this.onSubmit}
@@ -110,17 +105,7 @@ class App extends React.Component {
               validUrl={this.state.validUrl}
             />
           </div>
-        ) : this.state.route === 'signIn' ? (
-          <div>
-            <Logo />
-            <SignIn onRouteChange={this.onRouteChange} />
-          </div>
-        ) : (
-          <div>
-            <Logo />
-            <Register onRouteChange={this.onRouteChange} />
-          </div>
-        )}
+        
       </div>
     )
   }
